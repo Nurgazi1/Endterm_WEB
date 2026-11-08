@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Essence - Consultation & Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="site-nav navbar navbar-expand-lg navbar-dark bg-dark px-4">
+      <a class="brand navbar-brand" href="index.html">Aroma Essence</a>
+      <div class="nav-links ms-auto">
+        <a class="text-white-50 ms-3 text-decoration-none" href="index.html"
+          >Home</a
+        >
+        <a
+          class="active text-white ms-3 text-decoration-none"
+          href="consultation.html"
+          >Consultation</a
+        >
+      </div>
+    </nav>
+
+    <main class="page-container container my-5" style="max-width: 800px">
+      <section class="content-block mb-5">
+        <h2 class="mb-3">Fragrance Price List</h2>
+        <div class="table-responsive">
+          <table class="simple-table table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amber Midnight</td>
+                <td>Eau de Parfum</td>
+                <td>$49.00</td>
+              </tr>
+              <tr>
+                <td>Citrus Breeze</td>
+                <td>Eau de Toilette</td>
+                <td>$39.00</td>
+              </tr>
+              <tr>
+                <td>Ocean Mist</td>
+                <td>Eau de Parfum</td>
+                <td>$45.00</td>
+              </tr>
+              <tr>
+                <td>Midnight Oud</td>
+                <td>Parfum</td>
+                <td>$68.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-block">
+        <h2 class="mb-3">Consultation & Sample Request Form</h2>
+
+        <div id="successAlert" class="alert alert-success d-none" role="alert">
+          Thank you! Your consultation request has been successfully submitted.
+        </div>
+
+        <form
+          id="consultationForm"
+          class="simple-form p-4 border rounded bg-light"
+          novalidate
+        >
+          <div class="field-group mb-3">
+            <label for="fullName" class="form-label fw-bold">Full Name</label>
+            <input type="text" id="fullName" class="form-control" />
+            <div class="error-msg text-danger small mt-1 d-none">
+              Please enter your full name.
+            </div>
+          </div>
+
+          <div class="field-group mb-3">
+            <label for="email" class="form-label fw-bold">Email Address</label>
+            <input type="email" id="email" class="form-control" />
+            <div class="error-msg text-danger small mt-1 d-none">
+              Please enter a valid email address.
+            </div>
+          </div>
+
+          <div class="field-group mb-3">
+            <label for="phone" class="form-label fw-bold">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-control"
+              placeholder="10-12 digits"
+            />
+            <div class="error-msg text-danger small mt-1 d-none">
+              Please enter a valid phone number (at least 10 digits).
+            </div>
+          </div>
+
+          <div class="field-group mb-3">
+            <label for="consultDate" class="form-label fw-bold"
+              >Preferred Consultation Date</label
+            >
+            <input type="date" id="consultDate" class="form-control" />
+            <div class="error-msg text-danger small mt-1 d-none">
+              Please choose a valid future date.
+            </div>
+          </div>
+
+          <div class="field-group mb-3">
+            <label for="scent" class="form-label fw-bold"
+              >Preferred Scent</label
+            >
+            <select id="scent" class="form-select">
+              <option value="">Select a fragrance...</option>
+              <option value="amber">Amber Midnight</option>
+              <option value="citrus">Citrus Breeze</option>
+              <option value="ocean">Ocean Mist</option>
+              <option value="velvet">Velvet Bloom</option>
+              <option value="vanilla">Golden Vanilla</option>
+              <option value="iris">Wild Iris</option>
+              <option value="oud">Midnight Oud</option>
+              <option value="solar">Solar Blossom</option>
+            </select>
+            <div class="error-msg text-danger small mt-1 d-none">
+              Please select a preferred scent.
+            </div>
+          </div>
+
+          <div class="field-group mb-4">
+            <label for="notes" class="form-label fw-bold"
+              >Special Notes / Requests</label
+            >
+            <textarea id="notes" class="form-control" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary px-4">
+            Submit Request
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">&copy; 2026 Aroma Essence. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  min-height: 100vh;
+}
+
+.hidden-content {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.spotlight-img {
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.sakura-theme {
+  background: linear-gradient(135deg, #fff5f7 0%, #fde2e4 100%);
+}
+
+.sakura-theme .spotlight-img {
+  filter: drop-shadow(0 15px 25px rgba(235, 100, 130, 0.25));
+}
+
+.gold-text,
+.text-gold {
+  color: #d4af37;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: #0f1115;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-gold:hover,
+.btn-gold.active {
+  background-color: #f3e5ab;
+  color: #0f1115;
+}
+
+.btn-outline-gold {
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+.btn-outline-gold:hover {
+  background-color: #d4af37;
+  color: #0f1115;
+}
+
+.winter-theme {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #f8fafc 100%);
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+.winter-theme .text-ice {
+  color: #0284c7;
+}
+
+.winter-theme .btn-ice {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.winter-theme .btn-ice:hover,
+.winter-theme .btn-ice.active {
+  background-color: #0369a1;
+  color: #ffffff;
+}
+
+.winter-theme .btn-outline-ice {
+  border: 1px solid #0284c7;
+  color: #0284c7;
+}
+
+.winter-theme .btn-outline-ice:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+.winter-theme .frosted-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.winter-theme .spotlight-img {
+  filter: drop-shadow(0 20px 30px rgba(14, 165, 233, 0.25));
+}

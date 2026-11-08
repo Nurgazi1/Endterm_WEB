@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Sakura Essence - Aroma Essence</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="banner.css" />
+  </head>
+  <body class="sakura-theme">
+    <div class="container py-5">
+      <a href="index.html" class="btn btn-outline-secondary mb-4"
+        >&larr; Back to Shop</a
+      >
+
+      <div id="sakuraContent" class="row align-items-center hidden-content">
+        <div class="col-md-6 text-center">
+          <img
+            src="media/post-ready.png"
+            alt="Spring Sakura Essence"
+            class="img-fluid spotlight-img"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold">Spring Sakura Essence</h1>
+          <p class="lead text-muted">
+            A delicate blend of blooming cherry blossoms, white peach, and soft
+            musk.
+          </p>
+          <h3 class="text-primary my-3">$58.00</h3>
+
+          <div class="scent-notes mt-4">
+            <h5>Fragrance Notes</h5>
+            <div class="d-flex gap-2 my-2">
+              <button
+                class="btn btn-sm btn-outline-danger note-btn"
+                data-note="#topNote"
+              >
+                Top
+              </button>
+              <button
+                class="btn btn-sm btn-outline-danger note-btn"
+                data-note="#heartNote"
+              >
+                Heart
+              </button>
+              <button
+                class="btn btn-sm btn-outline-danger note-btn"
+                data-note="#baseNote"
+              >
+                Base
+              </button>
+            </div>
+            <div id="topNote" class="note-box alert alert-light">
+              <strong>Top Notes:</strong> Fresh Bergamot & White Peach
+            </div>
+            <div id="heartNote" class="note-box alert alert-light d-none">
+              <strong>Heart Notes:</strong> Japanese Sakura Blossom & Pink Peony
+            </div>
+            <div id="baseNote" class="note-box alert alert-light d-none">
+              <strong>Base Notes:</strong> White Musk & Sandalwood
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="banner.js"></script>
+  </body>
+</html>

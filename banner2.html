@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midnight Oud Collection - Aroma Essence</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="banner.css" />
+  </head>
+  <body class="winter-theme">
+    <div class="container py-5">
+      <a href="index.html" class="btn btn-outline-light mb-4"
+        >&larr; Back to Shop</a
+      >
+
+      <div id="oudContent" class="row align-items-center hidden-content">
+        <div class="col-md-6 text-center">
+          <img
+            src="media/post2-ready.png"
+            alt="Midnight Oud"
+            class="img-fluid luxury-img"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold gold-text">Silver Mountain Water</h1>
+          <p class="lead text-light-50">From the highest peaks.</p>
+
+          <div class="size-selector my-4">
+            <label class="d-block mb-2 text-gold">Select Bottle Size:</label>
+            <button class="btn btn-gold size-btn active" data-price="$68.00">
+              50ml
+            </button>
+            <button class="btn btn-outline-gold size-btn" data-price="$110.00">
+              100ml
+            </button>
+          </div>
+
+          <h2 id="priceDisplay" class="gold-text mb-4">$68.00</h2>
+          <button class="btn btn-gold btn-lg px-4">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="banner.js"></script>
+  </body>
+</html>
